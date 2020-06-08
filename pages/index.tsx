@@ -3,7 +3,10 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import Navbar from '../components/Navbar';
+import Navbar from 'components/navbar/Navbar';
+import { StylesProvider } from '@material-ui/core/styles';
+
+
 
 export default function Home() {
   return (
@@ -12,8 +15,13 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        
       </Head>
-      <Navbar />
+      <StylesProvider injectFirst>
+      {   
+      <Navbar />}
+      </StylesProvider>
+
       <main>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -50,6 +58,7 @@ export default function Home() {
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
+            
           </a>
         </div>
       </main>
@@ -61,7 +70,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src="/candid.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
