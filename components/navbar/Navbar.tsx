@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import { Toolbar, AppBar, Typography, Button, Paper,  Grid, Slide } from '@material-ui/core/';
 import { StyledAppBar, StyledLink, StyledRoundedButton, StyledGridItem } from './navbar.styled';
-import CandidIcon from 'assets/images/CandidIcon';
+import CandidIcon from 'public/assets/images/CandidIcon';
 import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
 import NoSsr from '@material-ui/core/NoSsr';
 
