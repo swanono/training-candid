@@ -3,6 +3,8 @@ import Head from 'next/head'
 import { useState, useEffect, Fragment } from 'react';
 import { Button, Paper, Menu, MenuItem, Toolbar } from '@material-ui/core/';
 
+// TODO : Creer un component qui permet de mettre de sous-menu sous forme de navbar avec un tableau de lien en props
+
 export default function NavbarMenu() {
     const [anchorEl, setAnchorEl] = useState(null);
 

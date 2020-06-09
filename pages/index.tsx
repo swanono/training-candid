@@ -8,6 +8,8 @@ import { StylesProvider } from '@material-ui/core/styles';
 
 
 
+
+
 export default function Home() {
   return (
     
@@ -15,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-        
+        <noscript id="jss-insertion-point"></noscript>
       </Head>
       <StylesProvider injectFirst>
       {   

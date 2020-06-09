@@ -1,12 +1,9 @@
 import {useState} from 'react';
-import { Toolbar, AppBar, Typography, Button, Paper, Container, Link, Grid, Icon, Slide } from '@material-ui/core/';
-import { StyledAppBar, StyledLink, StyledRoundedButton } from './navbar.styled';
+import { Toolbar, AppBar, Typography, Button, Paper,  Grid, Slide } from '@material-ui/core/';
+import { StyledAppBar, StyledLink, StyledRoundedButton, StyledGridItem } from './navbar.styled';
 import CandidIcon from 'assets/images/CandidIcon';
-import NavbarMenu from 'components/navbarMenu/NavbarMenu';
-import styled from 'styled-components';
-import { StylesProvider } from '@material-ui/core/styles';
 import ArrowForwardRoundedIcon from '@material-ui/icons/ArrowForwardRounded';
-
+import NoSsr from '@material-ui/core/NoSsr';
 
 
 
@@ -25,46 +22,55 @@ export default function Navbar() {
 
     return (
         <>
-            <StylesProvider injectFirst>
-                {
+           <NoSsr>
                     <StyledAppBar elevation={0}  >
                         <Paper elevation={0} square>
 
                             <Toolbar >
                                 <Grid container>
-                                    <Grid item xs>
-                                        <nav>
+                                    <StyledGridItem item xs>
                                             <StyledLink href="/">
                                                 <CandidIcon />
                                             </StyledLink>
-
+                                    </StyledGridItem>
+                                    <StyledGridItem item xs>
                                             <StyledLink variant="button" color="textPrimary" href="#" noWrap>
                                                 Why Candid?
                                             </StyledLink>
+                                    </StyledGridItem>
+                                    <StyledGridItem item xs>
                                             <StyledLink variant="button" color="textPrimary" href="#" noWrap>
                                                 Results
                                             </StyledLink>
+                                    </StyledGridItem>
+                                    <StyledGridItem item xs>
                                             <StyledLink variant="button" color="textPrimary" href="#" noWrap>
                                                 Pricing
                                             </StyledLink>
+                                    </StyledGridItem>
+                                    <StyledGridItem item xs>
                                             <StyledLink variant="button" color="textPrimary" href="#" noWrap>
                                                 Products
                                             </StyledLink>
+                                    </StyledGridItem>
+                                    <StyledGridItem item xs>
                                             <StyledLink variant="button" color="textPrimary" href="#" noWrap>
                                                 Locations
                                             </StyledLink>
+                                    </StyledGridItem>
+                                    <StyledGridItem item xs>
                                             <StyledLink variant="button" color="textPrimary" href="#" noWrap>
                                                 Articles
                                             </StyledLink>
-                                        </nav>
-                                    </Grid>
+                                    </StyledGridItem>
 
 
-                                    <Grid item xs >
-                                        <nav>
+                                    <StyledGridItem item xs >
                                             <StyledLink variant="button" color="textPrimary" href="#" noWrap>
                                                 Log in
                                             </StyledLink>
+                                    </StyledGridItem>
+                                    <StyledGridItem item xs>
                                             <StyledRoundedButton
                                                 variant="contained"
                                                 onMouseOver={handleMouseOverring}
@@ -78,15 +84,13 @@ export default function Navbar() {
                                                     <ArrowForwardRoundedIcon />
                                                 </Slide>
                                             </StyledRoundedButton>
-                                        </nav>
-                                    </Grid>
+                                    </StyledGridItem>
                                 </Grid>
                             </Toolbar>
                         </Paper>
 
                     </StyledAppBar>
-                }
-            </StylesProvider>
+                    </NoSsr>
         </>
     )
 }
