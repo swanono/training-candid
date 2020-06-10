@@ -7,12 +7,15 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#F64850',
+      light: '#FF7F5'
     },
     secondary: {
-      main: '#19857b',
+      main: '#e8f7f7',
     },
     error: {
-      main: red.A400,
+      light: '#e57373',
+      main: '#f44336',
+      dark:  '#d32f2f',
     },
     background: {
       default: '#fff',
@@ -27,8 +30,20 @@ const theme = createMuiTheme({
         background: ' rgb(246, 72, 80)',
         borderRadius: 999,
         color: 'white',
+        '&:hover': {
+          background: ' rgb(246, 72, 80)',
+          borderRadius: 999,
+          color: 'white',
+        }
+        
       },
+      
     },
+  },
+  typography : {
+    htmlFontSize: 16,
+    fontFamily: ["Modern Hera", "Helvetica Neue", "Helvetica", "Roboto"].join(','),
+    
   },
 });
 
