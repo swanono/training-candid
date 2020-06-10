@@ -62,8 +62,7 @@ export const StyledSpan = styled.span`
     will-change: transform;
     transition: all 300ms ease-out 0s;
     Button:hover  &{
-    
-    transform: translate3d(-1rem, 0px, 0px);
+        transform: translate3d(-1rem, 0px, 0px);
     }
 `;
 
