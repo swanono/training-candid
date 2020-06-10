@@ -9,17 +9,14 @@ export const StyledAppBar = styled(AppBar)`
 `;
 
 export const StyledLink = styled(Link)`
-    && {
-        padding: 2em;
-    }
+    
+    padding: 1em;
+    
 
 `;
 
 export const StyledRoundedButton = styled(Button)`
     && {
-        border-radius: 999px;
-        background-color: rgb(246, 72, 80);
-        color: #FFF;
     }
 `;
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { GridListTile } from '@material-ui/core'
-import theme from '../../public/assets/themes/theme';
+import theme from '../../config/theme';
 
 export const StyledH2 = styled.h2`
     && { 

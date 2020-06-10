@@ -1,6 +1,7 @@
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { red } from '@material-ui/core/colors';
+import { Hidden } from '@material-ui/core';
 
 // Create a theme instance.
 const theme = createMuiTheme({
@@ -30,10 +31,12 @@ const theme = createMuiTheme({
         background: ' rgb(246, 72, 80)',
         borderRadius: 999,
         color: 'white',
+        overflow: "Hidden",
         '&:hover': {
           background: ' rgb(246, 72, 80)',
           borderRadius: 999,
           color: 'white',
+          
         }
         
       },
