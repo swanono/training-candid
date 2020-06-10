@@ -1,0 +1,4 @@
+<svg class="arrow" width="30" height="21" viewBox="0 0 30 21" xmlns="http://www.w3.org/2000/svg" stroke="white" fill="white" >
+    <title>ic-arrow-right</title>
+    <path stroke="white" d="M26.576 10.05l-8.204-8.117A.75.75 0 0 1 19.428.867l9.5 9.4a.75.75 0 0 1 0 1.066l-9.5 9.4a.75.75 0 0 1-1.056-1.066l8.204-8.117H1a.75.75 0 1 1 0-1.5h25.576z" fill="white" fill-rule="nonzero"></path>
+</svg>

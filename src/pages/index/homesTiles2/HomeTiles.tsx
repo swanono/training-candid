@@ -1,8 +1,8 @@
-import { GridList, GridListTile } from '@material-ui/core/';
+import { Grid } from '@material-ui/core/';
 import NoSsr from '@material-ui/core/NoSsr';
 import { FC } from "react";
 
-import { StyledGridList, StyledGridListTile, StyledImg } from './HomeTiles.styled';
+import { StyledGridList, StyledDiv, StyledImg, StyledGridItem, StyledParagraph } from './HomeTiles.styled';
 import { Paragraph } from 'components/paragraph/Paragraph';
 
 
@@ -11,16 +11,22 @@ const HomeTiles: FC = () => {
 
 
     return (
-        <div>
-            <StyledGridList cellHeight={"auto"} cols={3} spacing={1}>
-                <StyledGridListTile cols={1}   >
+        <StyledDiv>
+            <Grid 
+                container 
+                spacing={3}
+                direction="row"
+                justify="flex-start"
+                alignItems="stretch"
+            >
+                <StyledGridItem item xs>
                     <StyledImg src='/assets/images/image1.jpg' />
-                </StyledGridListTile>
-                <StyledGridListTile cols={1}  >
+                </StyledGridItem>
+                <StyledGridItem item xs>
                     <StyledImg src='/assets/images/image2.jpg' />
-                </StyledGridListTile>
-                <StyledGridListTile cols={1}  >
-                    <Paragraph
+                </StyledGridItem>
+                <StyledGridItem item xs >
+                    <StyledParagraph
                         subtitle="CLEAR ALIGNERS REALIGNED"
                         title="Meet the future of teeth straightening."
                         text="Introducing clear aligner treatment with 
@@ -28,10 +34,10 @@ const HomeTiles: FC = () => {
                                     Skip the office visits, keep the expert oversight."
                         button="Am I a candidate?"
                     />
-                </StyledGridListTile>
-            </StyledGridList>
+                </StyledGridItem>
+            </Grid>
 
-        </div>
+        </StyledDiv>
     );
 };
 

@@ -1,35 +1,27 @@
-import { CitiesQuery, City } from "interfaces/City.interface";
-import { GET_CITIES } from "queries/cities.query";
-import { client } from "lib/apollo";
+import Head from "next/head";
 import { FC } from "react";
-import Layout from "components/layout/Layout";
 
-import Navbar from "components/navbar/Navbar"
-import HomeTiles from "pages/index/homesTiles/HomeTiles"
 
-interface Props {
-  cities: City[];
-}
+import Navbar from "components/navbar/Navbar";
+import HomeTiles from "pages/index/homesTiles2/HomeTiles";
 
-const Home: FC<Props> = ({ cities }) => {
+
+
+const Home: FC = () => {
   return (
-    <Layout>
+    <div>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <main>
         <HomeTiles />
       </main>
-    </Layout>
+    </div>
   );
 };
 
-export const getStaticProps = async () => {
-  const { data } = await client.query<CitiesQuery>({
-    query: GET_CITIES,
-  });
 
-  return {
-    props: { cities: data.cities.nodes },
-  };
-};
 
 export default Home;
