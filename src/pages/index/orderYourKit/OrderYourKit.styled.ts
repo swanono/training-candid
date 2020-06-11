@@ -8,7 +8,7 @@ export const StyledPaperBigScreen = styled(Box)`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    overflow: hidden;
+    overflow-x: hidden;
 `;
 
 export const StyledParagraph = styled(Paragraph)`
