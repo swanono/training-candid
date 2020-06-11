@@ -14,7 +14,6 @@ const HomeTiles: FC = () => {
         <StyledDiv>
             <Grid 
                 container 
-                spacing={3}
                 direction="row"
                 justify="flex-start"
                 alignItems="stretch"
@@ -25,7 +24,7 @@ const HomeTiles: FC = () => {
                 <StyledGridItem item xs>
                     <StyledImg src='/assets/images/image2.jpg' />
                 </StyledGridItem>
-                <StyledGridItem item xs >
+                <StyledGridItem item xs>
                     <StyledParagraph
                         subtitle="CLEAR ALIGNERS REALIGNED"
                         title="Meet the future of teeth straightening."

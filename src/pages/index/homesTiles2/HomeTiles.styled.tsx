@@ -19,10 +19,12 @@ export const StyledGridListTile = styled(GridListTile)`
 
 export const StyledImg = styled.img`
     && { 
-        width: 100%;
+        width: auto 100%;
         height: 100%;
-        object-fit: cover;
-        overflow: hidden;
+        object-fit: contain;
+        display: flex;
+        flex-shrink: 0;
+        padding-right: 1vw;
         
         
     }
@@ -30,17 +32,20 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledDiv = styled.div`
-    margin-top: 9em;
+    margin-top: 7em;
     margin-left: 4em;
     vertical-align: middle;
     overflow: hidden;
+    height: auto 20vh;
     
 
 `;
 
 export const StyledGridItem = styled(Grid)`
     vertical-align: middle;
-    display: flex;
+    height: 80vh;
+    padding: auto;
+    flex-grow: 0;
 
 `;
 

@@ -14,11 +14,11 @@ export const StyledImg = styled.img`
 `;
 
 export const StyledDiv = styled.div`
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin: 0px 1rem;
     vertical-align: middle;
 `;
 
 export const StyledGrid = styled(Grid)`
-    margin-top : 1rem;
+    margin-top : 2.5rem;
+    margin-bottom: 2rem;
 `;

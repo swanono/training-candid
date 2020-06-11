@@ -36,7 +36,7 @@ export const StyledP = styled.p`
 
 export const StyledDiv = styled.div`
     height: max-content;
-    width: 90%;
+    width: 120%;
     vertical-align: middle;
 `;
 

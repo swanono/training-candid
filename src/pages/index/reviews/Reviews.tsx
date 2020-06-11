@@ -2,6 +2,7 @@ import { Grid, GridList, GridListTile } from '@material-ui/core/';
 import { FC } from "react";
 import { Paragraph } from 'components/paragraph/Paragraph';
 import {StyledGrid, StyledImg, StyledDiv} from './Reviews.styled';
+import {GoogleReview} from 'components/googleReview/GoogleReview'
 
 const Reviews : FC = () => {
 
@@ -28,9 +29,9 @@ const Reviews : FC = () => {
                 <StyledDiv>
                     <StyledImg src="/assets/images/reviews/left-cub.svg" />
                 </StyledDiv>
-                <StyledDiv>
-                    <StyledImg src="/assets/images/reviews/star.svg" />
-                </StyledDiv>
+                <div>
+                    <GoogleReview mark={4.8} nbReview={2114} />
+                </div>
                 <StyledDiv>
                     <StyledImg src="/assets/images/reviews/right-cub.svg" />
                 </StyledDiv>
