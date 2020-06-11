@@ -4,6 +4,7 @@ import { FC } from "react";
 
 import Navbar from "components/navbar/Navbar";
 import HomeTiles from "pages/index/homesTiles2/HomeTiles";
+import Reviews from "pages/index/reviews/Reviews";
 
 
 
@@ -17,6 +18,7 @@ const Home: FC = () => {
       <Navbar />
       <main>
         <HomeTiles />
+        <Reviews/>
       </main>
     </div>
   );

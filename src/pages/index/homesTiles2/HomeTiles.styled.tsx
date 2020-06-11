@@ -31,8 +31,9 @@ export const StyledImg = styled.img`
 
 export const StyledDiv = styled.div`
     margin-top: 9em;
-    margin-left: 5em;
+    margin-left: 4em;
     vertical-align: middle;
+    overflow: hidden;
     
 
 `;

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import {Button, Grid } from '@material-ui/core/';
 import  {   StyledH2, StyledH1, StyledP, 
             StyledDiv, StyledArrow, StyledSpan 
@@ -6,15 +5,6 @@ import  {   StyledH2, StyledH1, StyledP,
 
 
 export const Paragraph = ({title, subtitle, text, button}) => {
-    const [mouseOver, setMouseOver] = useState(false);
-
-    const handleMouseOverring = () => {
-        setMouseOver(true);
-    };
-
-    const handleMouseLeaving = () => {
-        setMouseOver(false);
-    };
 
 
     return (
@@ -24,8 +14,6 @@ export const Paragraph = ({title, subtitle, text, button}) => {
                 <StyledH1>{title}</StyledH1>
                 <StyledP>{text}</StyledP>
                 <Button
-                    onMouseOver={handleMouseOverring}
-                    onMouseOut={handleMouseLeaving}
                     disableElevation
                 >
                     <StyledSpan>
