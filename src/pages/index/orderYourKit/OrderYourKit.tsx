@@ -11,7 +11,7 @@ const OrderYourKit: FC = () => {
 
 
     return (
-        <Box display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
+        <Box component="div"display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
             <StyledPaperBigScreen>
                 <StyledParagraph
                     subtitle="CLEAR ALIGNERS REALIGNED"
