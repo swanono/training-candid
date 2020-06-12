@@ -8,8 +8,8 @@ export const Paragraph = ({title, subtitle, text, button}) => {
 
 
     return (
-        <Grid container justify="center" direction="column" alignItems="stretch">
-            <StyledDiv>
+        <Grid container justify="flex-end" alignItems="center">
+            <StyledDiv item lg>
                 <StyledH2>{subtitle}</StyledH2>
                 <StyledH1>{title}</StyledH1>
                 <StyledP>{text}</StyledP>
@@ -21,7 +21,7 @@ export const Paragraph = ({title, subtitle, text, button}) => {
                         <StyledArrow src="/assets/images/arrow.svg" />
                     </StyledSpan>
                 </Button>
-                </StyledDiv>
+            </StyledDiv>
         </Grid>
     )
 }

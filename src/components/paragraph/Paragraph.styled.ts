@@ -34,10 +34,12 @@ export const StyledP = styled.p`
     
 `;
 
-export const StyledDiv = styled.div`
-    height: max-content;
-    width: 120%;
+export const StyledDiv = styled(Grid)`
+    max-width: 30vw;
     vertical-align: middle;
+    margin-right: 2em;
+
+
 `;
 
 export const StyledArrow = styled.img`

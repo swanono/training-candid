@@ -8,7 +8,7 @@ export const GoogleReview = ({mark, nbReview}: {mark: number, nbReview: number})
 
         let stars = [];
         for(let i = 0; i < Math.ceil(mark); i++) {
-            stars.push(<StyledImg src="/assets/images/reviews/star.svg" />)
+            stars.push(<StyledImg src="/assets/images/reviews/star.svg" key={i}/>)
         }
         return (
             <StyledDiv>
