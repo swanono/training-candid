@@ -6,7 +6,7 @@ import Navbar from "components/navbar/Navbar";
 import HomeTiles from "pages/index/homesTiles2/HomeTiles";
 import Reviews from "pages/index/reviews/Reviews";
 import OrderYourKit from "pages/index/orderYourKit/OrderYourKit"
-
+import HowItWorks from "pages/index/howItWorks/HowItWorks"
 
 
 const Home: FC = () => {
@@ -21,6 +21,7 @@ const Home: FC = () => {
         <HomeTiles />
         <Reviews/>
         <OrderYourKit/>
+        <HowItWorks />
       </main>
     </div>
   );
