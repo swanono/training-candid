@@ -1,5 +1,5 @@
 import {Button, Grid, Color } from '@material-ui/core/';
-import  { StyledH2, StyledP,StyledDiv } from './IconLabeled.styled';
+import  { StyledH2, StyledDiv } from './IconLabeled.styled';
 
 
 export const IconLabeled = ({iconName, text, innerColor}: 
