@@ -1,11 +1,9 @@
 import { Grid, Box } from '@material-ui/core/';
-import NoSsr from '@material-ui/core/NoSsr';
 import { FC } from "react";
 
-import { StyledPaperBigScreen, StyledParagraph } from './OrderYourKit.styled';
-import { Paragraph } from 'components/paragraph/Paragraph';
 import { PersonalStepper } from 'components/personalStepper/PersonalStepper';
 import {Step} from 'interfaces/Step.interface';
+import { StyledH2, StyledH1 } from './HowItWorks.styled';
 
 const OrderYourKit: FC = () => {
     const steps : Step[] = [{title: "Order your starter kit",
@@ -25,6 +23,8 @@ const OrderYourKit: FC = () => {
                 >   
                 
                     <Grid item xs>
+                        <StyledH2>THREE SIMPLE STEPS</StyledH2>
+                        <StyledH1>How it works</StyledH1>
                         <PersonalStepper steps={steps} />
                     </Grid>
             </Grid>

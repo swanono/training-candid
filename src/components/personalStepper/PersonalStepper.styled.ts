@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Button, Grid } from '@material-ui/core'
+import { StepConnector } from '@material-ui/core'
 import theme from '../../config/theme';
 
 export const StyledH2 = styled.h2`
@@ -14,16 +14,6 @@ export const StyledH2 = styled.h2`
     
 `;
 
-export const StyledH1 = styled.h1`
-    && { 
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin: 0.625rem 0px 1.5rem;
-        line-height: 1.2;
-    }
-    
-`;
-
 export const StyledP = styled.p`
     && { 
         font-size: 1rem;
@@ -34,42 +24,27 @@ export const StyledP = styled.p`
     
 `;
 
-export const StyledDiv = styled(Grid)`
-    max-width: 30vw;
-    vertical-align: middle;
-    margin-right: 2em;
-
-
-`;
-
-export const StyledArrow = styled.img`
-    position: absolute;
-    top: 48%;
-    right: 0px;
-    width: 24px;
-    opacity: 0;
-    
-    transform: translateY(-50%);
-        transition: opacity 150ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s, right 250ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-
-    Button:hover &{
-        opacity: 1;
-        right: -2rem;
+export const StyledConnector = styled(StepConnector)`
+    &&.MuiStepConnector-alternativeLabel {
+        top: 10;
+        left: calc(-50% + 10vw);
+        right: calc(50% + 10vw);
+        color: ${theme.palette.primary.main};
+    }
+    && .MuiStepConnector-line {
+        border-color:  ${theme.palette.primary.main};
+    }
+    .MuiStepConnector-root {
+        root: {
+            z-index: 1;
+            width: 500;
+            height: 50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            border-radius: 50%;
+        }
+  
     }
 `;
-
-export const StyledSpan = styled.span`
-    position: relative;
-    display: inline-block;
-    will-change: transform;
-    transition: all 300ms ease-out 0s;
-    Button:hover  &{
-        transform: translate3d(-1rem, 0px, 0px);
-    }
-`;
-
-export const StyledArrowButton = styled(Button)`
-    transition: all 250ms cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    
-`;
-
