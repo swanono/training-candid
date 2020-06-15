@@ -23,6 +23,7 @@ export const VideoTile = () => {
             >
                 <Grid container
                     justify="flex-start"
+                    alignItems="stretch"
                 >
                     <StyledBackgroundImage item sm={6} />
                     <StyledRightGrid item sm={6} >

@@ -30,7 +30,6 @@ export const StyledBackgroundImage = styled(Grid)`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 70vh;
 `;
 
 export const StyledRightGrid = styled(Grid)`
