@@ -8,7 +8,7 @@ import Reviews from "pages/index/reviews/Reviews";
 import OrderYourKit from "pages/index/orderYourKit/OrderYourKit"
 import HowItWorks from "pages/index/howItWorks/HowItWorks"
 import VideoTile from "pages/index/videoTile/VideoTile"
-
+import WhyOrthodontist from "pages/index/whyOrthodontist/WhyOrthodontist"
 
 const Home: FC = () => {
   return (
@@ -24,6 +24,7 @@ const Home: FC = () => {
         <OrderYourKit/>
         <HowItWorks />
         <VideoTile />
+        <WhyOrthodontist />
       </main>
     </div>
   );

@@ -6,17 +6,24 @@ import  {   StyledH2, StyledH1, StyledP,
 
 export const Paragraph = ({title, subtitle, text, button, innerColor}: 
                             {title: string,
-                             subtitle: string,
+                             subtitle?: string,
                              text: string, 
                              button?: string,
                              innerColor?: string}
                          ) => 
 {
 
+    const subtitleElement = () => {
+        if (subtitle) 
+            return (<StyledH2 color={innerColor}>{subtitle}</StyledH2>)
+        else 
+            return (<></>)
+    }
+
     return (
         <Grid container justify="flex-end" alignItems="center">
             <StyledDiv item lg >
-                <StyledH2 color={innerColor}>{subtitle}</StyledH2>
+                {subtitleElement()}
                 <StyledH1 color={innerColor}>{title}</StyledH1>
                 <StyledP color={innerColor}>{text}</StyledP>
                 {
