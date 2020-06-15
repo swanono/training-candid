@@ -1,11 +1,11 @@
-import {Step, Stepper, StepLabel } from '@material-ui/core/';
+import {Step, Stepper, StepLabel, Orientation } from '@material-ui/core/';
 import  {   StyledH2, StyledConnector, StyledP, StyledStepLabel } from './PersonalStepper.styled';
 import {Step as IStep} from  'interfaces/Step.interface';
 import { red } from '@material-ui/core/colors';
 
 
 
-export const PersonalStepper = ({steps}: {steps: IStep[]}) => {
+export const PersonalStepper = ({steps, orientation= 'horizontal'}: {steps: IStep[], orientation?: Orientation}) => {
 
     const stepsElement = [];
     steps.forEach( step => {
@@ -21,7 +21,7 @@ export const PersonalStepper = ({steps}: {steps: IStep[]}) => {
 
     return (
         <>
-            <Stepper activeStep={0} alternativeLabel connector={<StyledConnector  />}>
+            <Stepper activeStep={0} alternativeLabel orientation={orientation} connector={<StyledConnector  />}>
                 {stepsElement}
             </Stepper>
       </>

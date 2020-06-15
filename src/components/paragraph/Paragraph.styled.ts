@@ -4,12 +4,12 @@ import theme from '../../config/theme';
 
 export const StyledH2 = styled.h2`
     && { 
-        font-size: 0.625rem;
+        font-size: 0.825rem;
         font-weight: 500;
         line-height: 1.6;
         letter-spacing: 0.08em;
-        text-transform: capitalize;
-        color: ${theme.palette.primary.main};
+        text-transform: uppercase;
+        color: ${props => props.color ? props.color : theme.palette.primary.main};
     }
     
 `;
@@ -20,6 +20,7 @@ export const StyledH1 = styled.h1`
         font-weight: 700;
         margin: 0.625rem 0px 1.5rem;
         line-height: 1.2;
+        color: ${props => props.color ? props.color : theme.palette.text.primary};
     }
     
 `;
@@ -28,7 +29,7 @@ export const StyledP = styled.p`
     && { 
         font-size: 1rem;
         line-height: 1.4;
-        color: ${theme.palette.text.secondary};
+        color: ${ props => props.color ? props.color : theme.palette.text.secondary};
         margin: 0px auto 2rem;
     }
     

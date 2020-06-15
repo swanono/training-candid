@@ -14,21 +14,43 @@ const OrderYourKit: FC = () => {
                             text: "Your orthodontist will track your progress with scans you take from your phone."}]
 
     return (
-        <StyledBox component="div" >
-            <Grid
-                    container
-                    direction="row"
-                    justify="center"
-                    alignItems="center"
-                >   
-                
-                    <Grid item xs>
-                        <StyledH2>THREE SIMPLE STEPS</StyledH2>
-                        <StyledH1>How it works</StyledH1>
-                        <PersonalStepper steps={steps} />
-                    </Grid>
-            </Grid>
-        </StyledBox>
+        <>
+            <StyledBox component="div" display={{ xs: 'none', sm: 'block', md: 'block', lg: 'block', xl: 'block' }}>
+                <Grid
+                        container
+                        direction="row"
+                        justify="center"
+                        alignItems="center"
+                        
+                        
+                    >   
+                    
+                        <Grid item sm>
+                            <StyledH2>THREE SIMPLE STEPS</StyledH2>
+                            <StyledH1>How it works</StyledH1>
+                            <PersonalStepper steps={steps} />
+                        </Grid>
+                </Grid>
+            </StyledBox>
+
+            <StyledBox component="div" display={{ xs: 'block', sm: 'none', md: 'none', lg: 'none', xl: 'none' }}>
+                <Grid
+                        container
+                        direction="row"
+                        justify="center"
+                        alignItems="center"
+                        
+                        
+                    >   
+                    
+                        <Grid item xs >
+                            <StyledH2>THREE SIMPLE STEPS</StyledH2>
+                            <StyledH1>How it works</StyledH1>
+                            <PersonalStepper steps={steps} orientation='vertical' />
+                        </Grid>
+                </Grid>
+            </StyledBox>
+        </>
     );
 };
 
