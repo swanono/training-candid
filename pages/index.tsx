@@ -7,7 +7,7 @@ import HomeTiles from "pages/index/homesTiles2/HomeTiles";
 import Reviews from "pages/index/reviews/Reviews";
 import OrderYourKit from "pages/index/orderYourKit/OrderYourKit"
 import HowItWorks from "pages/index/howItWorks/HowItWorks"
-import VideoTile from "pages/index/videoTile/videoTile"
+import VideoTile from "pages/index/videoTile/VideoTile"
 
 
 const Home: FC = () => {

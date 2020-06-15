@@ -1,11 +1,11 @@
 import { Button, Grid, Box } from "@material-ui/core/";
 import {
-    StyledH2,
-    StyledH1,
+    StyledIconBlock,
     StyledBackgroundImage,
     StyledRightGrid
 } from "./VideoTile.styled";
 import { Paragraph } from "components/paragraph/Paragraph";
+import { IconLabeled } from "components/iconLabeled/IconLabeled";
 
 
 export const VideoTile = () => {
@@ -33,6 +33,23 @@ export const VideoTile = () => {
                                 specialists in tooth movement."
                             innerColor="white"
                         />
+                        <StyledIconBlock>
+                            <IconLabeled
+                                iconName="study"
+                                text="20 years of experience on average"
+                                innerColor="white"
+                            />
+                            <IconLabeled
+                                iconName="tooth"
+                                text="Experts in clear aligner treatment"
+                                innerColor="white"
+                            />
+                            <IconLabeled
+                                iconName="phone"
+                                text="Trained in cutting-edge remote care"
+                                innerColor="white"
+                            />
+                        </StyledIconBlock>
                     </StyledRightGrid>
                 </Grid>
             </Box>

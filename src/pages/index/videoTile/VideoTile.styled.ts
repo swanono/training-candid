@@ -47,3 +47,7 @@ export const StyledRightGrid = styled(Grid)`
         }
     }
 `;
+
+export const StyledIconBlock = styled.div`
+    margin-top: 2.5rem;
+`;
