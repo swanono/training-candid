@@ -3,7 +3,7 @@ import { FC } from "react";
 
 import { PersonalStepper } from 'components/personalStepper/PersonalStepper';
 import {Step} from 'interfaces/Step.interface';
-import { StyledH2, StyledH1 } from './HowItWorks.styled';
+import { StyledH2, StyledH1, StyledBox } from './HowItWorks.styled';
 
 const OrderYourKit: FC = () => {
     const steps : Step[] = [{title: "Order your starter kit",
@@ -14,7 +14,7 @@ const OrderYourKit: FC = () => {
                             text: "Your orthodontist will track your progress with scans you take from your phone."}]
 
     return (
-        <Box component="div" display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block', xl: 'block' }}>
+        <StyledBox component="div" >
             <Grid
                     container
                     direction="row"
@@ -28,7 +28,7 @@ const OrderYourKit: FC = () => {
                         <PersonalStepper steps={steps} />
                     </Grid>
             </Grid>
-        </Box>
+        </StyledBox>
     );
 };
 
