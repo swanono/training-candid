@@ -5,38 +5,11 @@ import {
     StyledRightGrid
 } from "./WhyOrthodontist.styled";
 import { Paragraph } from "components/paragraph/Paragraph";
-import { IconLabeled } from "components/iconLabeled/IconLabeled";
+import { CircularProgressWithLabel } from "components/circularProgressWithLabel/CircularProgressWithLabel";
 import { FC } from "react";
 
 
 export const WhyOrthodontist = () => {
-
-    const CircularProgressWithLabel = (props: CircularProgressProps & { value: number }) => {
-        return (
-          <Box position="relative" display="inline-flex">
-            <CircularProgress variant="static" {...props} />
-                <Box
-                top={0}
-                left={0}
-                bottom={0}
-                right={0}
-                position="absolute"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
-                >
-                    <Typography variant="caption" component="div" color="textSecondary">
-                        <h3>{ props.value }</h3>
-                        <p>YEARS OF TRAINING</p>
-                    </Typography>
-                </Box>
-          </Box>
-        );
-      }
-      
-
-
-
 
 
     return (
@@ -47,19 +20,26 @@ export const WhyOrthodontist = () => {
             >
                 <Grid container
                     justify="center"
+                    direction="row"
+                    spacing={2}
                 >
-                    <Grid item xs={12} sm md lg xl>
+                    <Grid item xs={12} sm="auto" md="auto" lg="auto" xl="auto">
                         <Paragraph 
                             title="Why do we use orthodontists, not general dentists?" 
                             text="Because only orthodontists are trained in the diagnosis, 
                                 prevention and correction of irregular alignments of the teeth and jaws." 
                         />
                     </Grid>
-                    <Grid item xs={6} sm md lg xl>
-                        <CircularProgressWithLabel variant="static" value={4} />
+                    <Grid item xs={6} sm="auto" md="auto" lg="auto" xl="auto">
+                        <div>
+                            <CircularProgressWithLabel value={4} roundColor="secondary" title="Dentist" />
+                        </div>
                     </Grid>
-                    <Grid item xs={6} sm md lg xl>
-                        <CircularProgressWithLabel variant="static" value={7} />
+                    <Grid item xs={6} sm="auto" md="auto" lg="auto" xl="auto">
+                        <div>
+                        
+                        <CircularProgressWithLabel  value={7} title="Orthodontist"/>
+                        </div>
                     </Grid>
                 </Grid>
             </Box>
