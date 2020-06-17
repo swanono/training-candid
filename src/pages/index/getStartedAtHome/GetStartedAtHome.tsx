@@ -47,21 +47,21 @@ export const GetStartedAtHome = () => {
 
                         <Grid item xs={3}>
                             <BadgedLabeledPicture 
-                                src="/assets/images/starting/order-starter.jpg"  
-                                imgTitle="Order starter" 
-                                title="Order your starter kit" 
-                                text="How does it work? Just take photos and impressions of your teeth, then our team will take it from there." 
-                                badgeNumber="1" 
+                                src="/assets/images/starting/doctor-assess.jpg"  
+                                imgTitle="Doctor assess" 
+                                title="Our doctors assess your case" 
+                                text="Then they’ll design your treatment plan. When it’s ready, you’ll get a 3D model of your teeth straightening over time." 
+                                badgeNumber="2" 
                             />
                         </Grid>
 
                         <Grid item xs={3}>
                             <BadgedLabeledPicture 
-                                src="/assets/images/starting/order-starter.jpg"  
-                                imgTitle="Order starter" 
-                                title="Order your starter kit" 
-                                text="How does it work? Just take photos and impressions of your teeth, then our team will take it from there." 
-                                badgeNumber="1" 
+                                src="/assets/images/starting/aligners-delivered.jpg"  
+                                imgTitle="Aligners delivered" 
+                                title="Your aligners, delivered" 
+                                text="Your teeth straightening kit includes your full set of aligners and everything you need for remote monitoring by a doctor." 
+                                badgeNumber="3" 
                             />
                         </Grid>
                 </Grid>
