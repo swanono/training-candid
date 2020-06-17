@@ -1,5 +1,5 @@
-import {Button, Grid, Color, Badge, Card, CardActionArea, CardMedia} from '@material-ui/core/';
-import  { StyledH1, StyledP, StyledBadge } from './BadgedLabeledPicture.styled';
+import { Card, CardActionArea, CardMedia} from '@material-ui/core/';
+import  { StyledH1, StyledP, StyledBadge, StyledCardMedia } from './BadgedLabeledPicture.styled';
 
 
 export const BadgedLabeledPicture = ({src, imgTitle, title, text, badgeNumber}: 
@@ -25,7 +25,7 @@ export const BadgedLabeledPicture = ({src, imgTitle, title, text, badgeNumber}:
             >
                 <Card >
                     <CardActionArea>
-                        <CardMedia
+                        <StyledCardMedia
                         component="img"
                         alt={imgTitle}
                         image={src}

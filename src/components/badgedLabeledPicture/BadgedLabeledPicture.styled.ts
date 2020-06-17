@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Badge} from '@material-ui/core'
+import { Badge, CardMedia } from '@material-ui/core'
 import theme from '../../config/theme';
 
 
@@ -32,6 +32,19 @@ export const StyledBadge = styled(Badge)`
         line-height: 36px;
         text-align: center;
         border-radius: 999px;
+    }
+`;
+
+export const StyledCardMedia = styled(CardMedia)`
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: transform 0.2s ease-out 0s;
+        
+        
+    }
+    &:hover {
+        transform: scale(1);
     }
 `;
 
