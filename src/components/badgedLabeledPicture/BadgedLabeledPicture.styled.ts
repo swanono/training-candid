@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import { Badge, CardMedia } from '@material-ui/core'
+import { Badge, CardMediaProps, CardMediaTypeMap, CardMedia } from '@material-ui/core'
 import theme from '../../config/theme';
+import { OverridableComponent } from '@material-ui/core/OverridableComponent';
 
 
 
@@ -35,6 +36,7 @@ export const StyledBadge = styled(Badge)`
     }
 `;
 
+
 export const StyledCardMedia = styled(CardMedia)`
     width: 100%;
     object-fit: cover;
@@ -42,7 +44,7 @@ export const StyledCardMedia = styled(CardMedia)`
     transition: transform 0.2s ease-out 0s;
         
         
-    }
+    
     &:hover {
         transform: scale(1);
     }

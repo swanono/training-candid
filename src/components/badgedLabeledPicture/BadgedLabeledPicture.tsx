@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardMedia} from '@material-ui/core/';
+import { Card, CardActionArea} from '@material-ui/core/';
 import  { StyledH1, StyledP, StyledBadge, StyledCardMedia } from './BadgedLabeledPicture.styled';
 
 
@@ -26,10 +26,9 @@ export const BadgedLabeledPicture = ({src, imgTitle, title, text, badgeNumber}:
                 <Card >
                     <CardActionArea>
                         <StyledCardMedia
-                        component="img"
-                        alt={imgTitle}
-                        image={src}
-                        title={imgTitle}
+                            alt={imgTitle}
+                            image={src}
+                            title={imgTitle}
                         />
                         
                     </CardActionArea>
