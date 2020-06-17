@@ -28,9 +28,7 @@ export const Paragraph = ({title, subtitle, text, button, innerColor}:
                 <StyledP color={innerColor}>{text}</StyledP>
                 {
                     button &&
-                    <Button
-                        disableElevation
-                    >
+                    <Button disableElevation  >
                         <StyledSpan>
                             {button}
                             <StyledArrow src="/assets/images/arrow.svg" />
