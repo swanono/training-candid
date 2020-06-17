@@ -5,8 +5,10 @@ import {
     StyledRightGrid
 } from "./WhyOrthodontist.styled";
 import { Paragraph } from "components/paragraph/Paragraph";
+import  TableComparison  from "components/tableComparison/TableComparison"
 import { CircularProgressWithLabel } from "components/circularProgressWithLabel/CircularProgressWithLabel";
 import { FC } from "react";
+import { Container } from "next/app";
 
 
 export const WhyOrthodontist = () => {
@@ -21,7 +23,6 @@ export const WhyOrthodontist = () => {
                 <Grid container
                     justify="center"
                     direction="row"
-                    spacing={2}
                 >
                     <Grid item xs={12} sm="auto" md="auto" lg="auto" xl="auto">
                         <Paragraph 
@@ -41,7 +42,19 @@ export const WhyOrthodontist = () => {
                         <CircularProgressWithLabel  value={7} title="Orthodontist"/>
                         </div>
                     </Grid>
+                    
                 </Grid>
+                <Grid 
+                    container
+                    justify="center"
+                    direction="row"
+                >
+                        <Grid item xs="auto">
+                            <TableComparison/>
+                        </Grid>
+                </Grid>
+                
+                
             </Box>
 
         </>
