@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import theme from 'config/theme';
-import { Grid } from '@material-ui/core';
+import { Grid, Box } from '@material-ui/core';
 
 export const StyledH2 = styled.h2`
 && { 
@@ -49,4 +49,8 @@ export const StyledRightGrid = styled(Grid)`
 
 export const StyledIconBlock = styled.div`
     margin-top: 2.5rem;
+`;
+
+export const StyledBox = styled(Box)`
+    margin-top: 5em;
 `;

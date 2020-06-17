@@ -1,9 +1,5 @@
 import { Button, Grid, Box, CircularProgressProps, CircularProgress, Typography } from "@material-ui/core/";
-import {
-    StyledIconBlock,
-    StyledBackgroundImage,
-    StyledRightGrid
-} from "./WhyOrthodontist.styled";
+import { StyledBox } from "./WhyOrthodontist.styled";
 import { Paragraph } from "components/paragraph/Paragraph";
 import  TableComparison  from "components/tableComparison/TableComparison"
 import { CircularProgressWithLabel } from "components/circularProgressWithLabel/CircularProgressWithLabel";
@@ -16,14 +12,10 @@ export const WhyOrthodontist = () => {
 
     return (
         <>
-            <Box
-                component="div"
-                
-            >
-                <Grid container
-                    justify="center"
-                    direction="row"
-                >
+            <StyledBox component="div" >
+
+                <Grid container justify="center" direction="row">
+
                     <Grid item xs={12} sm="auto" md="auto" lg="auto" xl="auto">
                         <Paragraph 
                             title="Why do we use orthodontists, not general dentists?" 
@@ -31,11 +23,14 @@ export const WhyOrthodontist = () => {
                                 prevention and correction of irregular alignments of the teeth and jaws." 
                         />
                     </Grid>
+
+
                     <Grid item xs={6} sm="auto" md="auto" lg="auto" xl="auto">
                         <div>
                             <CircularProgressWithLabel value={4} roundColor="secondary" title="Dentist" />
                         </div>
                     </Grid>
+
                     <Grid item xs={6} sm="auto" md="auto" lg="auto" xl="auto">
                         <div>
                         
@@ -44,6 +39,9 @@ export const WhyOrthodontist = () => {
                     </Grid>
                     
                 </Grid>
+
+
+
                 <Grid 
                     container
                     justify="center"
@@ -53,9 +51,8 @@ export const WhyOrthodontist = () => {
                             <TableComparison/>
                         </Grid>
                 </Grid>
-                
-                
-            </Box>
+
+            </StyledBox>
 
         </>
     );
